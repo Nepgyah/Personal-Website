@@ -75,9 +75,107 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="experience"></div>
-      <div id="arcadia"></div>
-      <div id="education"></div>
+      <div id="experience" className="section">
+        <div className="section__wrapper">
+          <div className="section__text">
+            <h2>My Work Experience</h2>
+          </div>
+          <div className="work-block">
+            <div className="work-block__headline">
+              <div>
+                <div>
+                  <img src="/mnzt-logo.png" alt="" />
+                  <div>
+                    <p className="title">Junior Full Stack Web Developer</p>
+                    <p className="location">Manzanita K.K - Tokyo, Japan</p>
+                  </div>
+                </div>
+              </div>
+              <p>Jan 2024 - Present</p>
+            </div>
+            <div className="work-block__text">
+              <ul>
+                <li>Assisted in the design and implementation of <b>ax3</b>,  a web platform that focuses on ad creatives using psychology</li>
+                <li>Developed a REST API for <b>ax3</b> using Django and the Django Rest Framework</li>
+                <li>Integrated third-party APIs for features such as payment processing (Stripe), data storage (AWS), and creative assistance (OpenAI, Dall-e, ImageFX)</li>
+                <li>Let the development of 3 websites using Next.js, HTML and SCSS</li>
+                <li>Improve the main company websites with image optimization, accessibility and animations</li>
+                <li>Created over 300 backend unit tests using Pytest and 100+ frontend e2e tests using Jest, achieving 98% test coverage of the <b>ax3</b> platform</li>
+                <li>Supervised 2 UX/UI interns, assisting with design reviews and providing experience on working closely with development teams</li>
+              </ul>
+            </div>
+          </div>
+          <div className="work-block">
+            <div className="work-block__headline">
+              <div>
+                <div>
+                  <img src="/mnzt-logo.png" alt="" />
+                  <div>
+                    <p className="title">Intern Web Developer</p>
+                    <p className="location">Manzanita K.K - Tokyo, Japan</p>
+                  </div>
+                </div>
+              </div>
+              <p>Feb 2023 - April 2023</p>
+            </div>
+            <div className="work-block__text">
+              <ul>
+                <li>Assisted lead developer in expanding web platform stack with React.js and the MUI library</li>
+                <li>Developed website pages using HTML and CSS</li>
+                <li>Developed simple scripts using Python to parse social media data such as Reddit and Twitter</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="arcadia">
+        
+      </div>
+      <div id="education" className="section">
+        <div className="section__wrapper">
+          <div className="section__text">
+            <h2>My Work Experience</h2>
+          </div>
+          <div className="work-block">
+            <div className="work-block__headline">
+              <div>
+                <div>
+                  <img src="/mnzt-logo.png" alt="" />
+                  <div>
+                    <p className="title">B.S Computer Science</p>
+                    <p className="location">Lewis University - Illinois, USA</p>
+                  </div>
+                </div>
+              </div>
+              <p>Jan 2022 - Dec 2022</p>
+            </div>
+            <div className="work-block__text">
+              <ul>
+                <li>GPA: 3.7/4.0</li>
+              </ul>
+            </div>
+          </div>
+          <div className="work-block">
+            <div className="work-block__headline">
+              <div>
+                <div>
+                  <img src="/mnzt-logo.png" alt="" />
+                  <div>
+                    <p className="title">A.S Software Development</p>
+                    <p className="location">College Of DuPage - Illinois, USA</p>
+                  </div>
+                </div>
+              </div>
+              <p>Aug 2017 - Dec 2021</p>
+            </div>
+            <div className="work-block__text">
+              <ul>
+                <li>GPA: 3.6/4.0</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="misc"></div>
     </React.Fragment>
   );

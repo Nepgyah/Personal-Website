@@ -33,16 +33,17 @@ export default function RootLayout({
             <div className="wrapper">
                 <img src="/logo.png" alt="" />
                 <div className="socials-container">
-                  <IconButton>
+                  <IconButton size={'lg'}>
                     <AiFillLinkedin />
                   </IconButton>
-                  <IconButton>
+                  <IconButton size={'lg'}>
                     <AiFillGithub />
                   </IconButton>
-                  <IconButton>
+                  <IconButton size={'lg'}>
                     <AiOutlineMail />
                   </IconButton>
                 </div>
+                <div className="divider"></div>
             </div>
           </footer>
         </body>
