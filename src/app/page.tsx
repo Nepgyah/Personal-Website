@@ -10,7 +10,26 @@ import { AiOutlineArrowsAlt } from "react-icons/ai";
 export default function Home() {
   return (
     <React.Fragment>
-      <div id="hero"></div>
+      <div id="hero" className="section">
+        <img id="hero-rectangle" className="section__bg-element" src="/hero-rectangle.png" alt="" />
+        <div className="section__wrapper">
+          <div className="section__text">
+            <h1>Junior Full Stack Web Developer</h1>
+            <p>I’m a web developer with over 2 years of experience in web application development. From database design to responsive frontends, I have dipped my toes into almost all aspects of web development. Thanks for stopping by!</p>
+            <div id="hero-cta">
+              <Button size={'xl'}>
+                My Tech Stack
+              </Button>
+              <Button id="view-project" size={'lg'} variant={"outline"}>
+                View Main Project
+              </Button>
+            </div>
+          </div>
+          <div id="me">
+            <img className="box-shadow" src="/me.jpg" alt="" />
+          </div>
+        </div>
+      </div>
       <div id="skills" className="section">
         <div className="section__wrapper">
           <div id="skills-container">
@@ -76,6 +95,8 @@ export default function Home() {
         </div>
       </div>
       <div id="experience" className="section">
+        <img id="bg-work-triangles-one" className="section__bg-element" src="/bg-work-triangles-one.png" alt="" />
+        <img id="bg-work-triangles-two" className="section__bg-element" src="/bg-work-triangles-two.png" alt="" />
         <div className="section__wrapper">
           <div className="section__text">
             <h2>My Work Experience</h2>
@@ -132,6 +153,8 @@ export default function Home() {
         
       </div>
       <div id="education" className="section">
+        <img id="bg-education-lines-one" className="section__bg-element" src="/bg-education-lines-one.png" alt="" />
+        <img id="bg-education-lines-two" className="section__bg-element" src="/bg-education-lines-two.png" alt="" />
         <div className="section__wrapper">
           <div className="section__text">
             <h2>My Work Experience</h2>
@@ -140,7 +163,7 @@ export default function Home() {
             <div className="work-block__headline">
               <div>
                 <div>
-                  <img src="/mnzt-logo.png" alt="" />
+                  <img src="/lewis-logo.svg" alt="" />
                   <div>
                     <p className="title">B.S Computer Science</p>
                     <p className="location">Lewis University - Illinois, USA</p>
@@ -159,7 +182,7 @@ export default function Home() {
             <div className="work-block__headline">
               <div>
                 <div>
-                  <img src="/mnzt-logo.png" alt="" />
+                  <img src="/cod-logo.png" alt="" />
                   <div>
                     <p className="title">A.S Software Development</p>
                     <p className="location">College Of DuPage - Illinois, USA</p>
@@ -190,7 +213,7 @@ function SkillBox(
   }
 ) {
   return (
-    <div className="skill-box">
+    <div className="skill-box box-shadow">
       {icon}
       <p>{title}</p>
     </div>
@@ -207,7 +230,7 @@ function StackItem(
 ) {
   return (
     <div>
-      <Tag.Root size={'lg'}>
+      <Tag.Root size={'lg'} className="box-shadow">
         <Tag.StartElement>
           <img src={`/stack/${icon}.png`} />
         </Tag.StartElement>

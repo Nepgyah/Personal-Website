@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 import '@/styles/_main.scss'
-import { IconButton } from "@chakra-ui/react";
+import { Avatar, IconButton } from "@chakra-ui/react";
 
 export default function RootLayout({
   children,
@@ -23,7 +23,12 @@ export default function RootLayout({
         <body>
           <header id="header">
             <div className="wrapper">
-              <p>Auston Pawell</p>
+              <p>Auston</p>
+              <Avatar.Root size={'2xl'}>
+                <Avatar.Fallback name="Usual SNS Icon" />
+                <Avatar.Image src='/sensei.webp'/>
+              </Avatar.Root>
+              <p>Pawell</p>
             </div>
           </header>
             <main>
@@ -33,15 +38,21 @@ export default function RootLayout({
             <div className="wrapper">
                 <img src="/logo.png" alt="" />
                 <div className="socials-container">
-                  <IconButton size={'lg'}>
-                    <AiFillLinkedin />
-                  </IconButton>
-                  <IconButton size={'lg'}>
-                    <AiFillGithub />
-                  </IconButton>
-                  <IconButton size={'lg'}>
-                    <AiOutlineMail />
-                  </IconButton>
+                  <a href="https://www.linkedin.com/in/apawell" target="_blank">
+                    <IconButton size={'lg'}>
+                      <AiFillLinkedin />
+                    </IconButton>
+                  </a>
+                  <a href="https://github.com/Nepgyah" target="_blank">
+                    <IconButton size={'lg'}>
+                      <AiFillGithub />
+                    </IconButton>
+                  </a>
+                  <a href="mailto:auston.pawell@gmail.com" target="_blank">
+                    <IconButton size={'lg'}>
+                      <AiOutlineMail />
+                    </IconButton>
+                  </a>
                 </div>
                 <div className="divider"></div>
             </div>
