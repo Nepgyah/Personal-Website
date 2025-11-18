@@ -1,5 +1,7 @@
-import { Button, Tag } from "@chakra-ui/react";
+'use client';
+
 import React from "react";
+import { Button, Card, Tag } from "@chakra-ui/react";
 import { AiFillApi  } from "react-icons/ai";
 import { AiFillSetting } from "react-icons/ai";
 import { AiFillDatabase } from "react-icons/ai";
@@ -17,12 +19,16 @@ export default function Home() {
             <h1>Junior Full Stack Web Developer</h1>
             <p>I’m a web developer with over 2 years of experience in web application development. From database design to responsive frontends, I have dipped my toes into almost all aspects of web development. Thanks for stopping by!</p>
             <div id="hero-cta">
-              <Button size={'xl'}>
-                My Tech Stack
-              </Button>
-              <Button id="view-project" size={'lg'} variant={"outline"}>
-                View Main Project
-              </Button>
+              <a href="#stack">
+                <Button size={'xl'}>
+                  My Tech Stack
+                </Button>
+              </a>
+              <a href="#arcadia">
+                <Button id="view-project" size={'lg'} variant={"outline"}>
+                  View Main Project
+                </Button>
+              </a>
             </div>
           </div>
           <div id="me">
@@ -149,15 +155,66 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="arcadia">
-        
+      <div id="arcadia" className="section">
+        <div className="section__wrapper">
+          <div className="section__text">
+            <h2>Permier Personal Project: <br />Arcadia</h2>
+            <p>The current project I’m working on. Arcadia aims to combine all sorts of hobbies into one web platform. Track anime, manga and games, build your dream pc, stream music and more. Its your otaku sanctuary.</p>
+          </div>
+          <div id="arcadia-feats">
+            <Card.Root className="arcadia-feat box-shadow">
+              <img src="/arc-platform.jpg" alt="" />
+              <Card.Body gap={2}>
+                <Card.Title>Multi App Web Platform</Card.Title>
+                <Card.Description>
+                  All the Arcadia features in one place. Switch between your favorite hobbies with a click of a button.
+                </Card.Description>
+              </Card.Body>
+              <Card.Footer gap={2}>
+                <a href="https://arcadia-inky.vercel.app" target="_blank">
+                  <Button>Visit the Arcadia Platform</Button>
+                </a>
+              </Card.Footer>
+            </Card.Root>
+
+            <Card.Root className="arcadia-feat box-shadow">
+              <img src="/arc-website.jpg" alt="" />
+              <Card.Body gap={2}>
+                <Card.Title>Public Website</Card.Title>
+                <Card.Description>
+                  Learn about all the apps and what Arcadia means to me.
+                </Card.Description>
+              </Card.Body>
+              <Card.Footer gap={2}>
+                <a href="https://project-arcadia-jade.vercel.app" target="_blank">
+                  <Button>Visit the Arcadia Website</Button>
+                </a>
+              </Card.Footer>
+            </Card.Root>
+
+            <Card.Root className="arcadia-feat box-shadow">
+              <img src="/arc-api.png" alt="" />
+              <Card.Body gap={2}>
+                <Card.Title>Hybrid API</Card.Title>
+                <Card.Description>
+                  A singular backend API for the web plaform using a mix of REST and Graphql
+                </Card.Description>
+              </Card.Body>
+              <Card.Footer gap={2}>
+                <a href="https://github.com/Nepgyah/Arcadia" target="_blank">
+                  <Button>Visit the Arcadia Repo</Button>
+                </a>
+              </Card.Footer>
+            </Card.Root>
+          </div>
+        </div>
       </div>
       <div id="education" className="section">
         <img id="bg-education-lines-one" className="section__bg-element" src="/bg-education-lines-one.png" alt="" />
         <img id="bg-education-lines-two" className="section__bg-element" src="/bg-education-lines-two.png" alt="" />
         <div className="section__wrapper">
           <div className="section__text">
-            <h2>My Work Experience</h2>
+            <h2>My Education History</h2>
           </div>
           <div className="work-block">
             <div className="work-block__headline">

@@ -151,6 +151,8 @@ html {
     background-color: #ECEAED;
     color: #020003;
     font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
 }
 
 #header {
@@ -202,6 +204,7 @@ html {
         top: 5%;
         width: 100%;
     }
+
     #me {
         display: none;
     }
@@ -286,6 +289,36 @@ html {
     }
 }
 
+#arcadia {
+    background-color: $bg-dark;
+
+    .section__text {
+        color: white;
+        text-align: center;
+    }
+
+    #arcadia-feats {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .chakra-card__root {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .arcadia-feat {
+        background-color: #451E3A;
+
+        img {
+            height: 225px;
+            object-fit: cover;
+        }
+    }
+}
+
 #education {
 
     #bg-education-lines-one {
@@ -337,6 +370,7 @@ html {
         }
     }
 }
+
 @media only screen and (min-width: 768px) {
 
     h1 {
@@ -371,6 +405,7 @@ html {
             }
         }
     }
+
     #hero {
 
         .section__wrapper {
@@ -451,6 +486,16 @@ html {
         #stack-second-row {
             display: grid;
             grid-template-columns: 1.5fr 1fr;
+        }
+    }
+
+    #arcadia {
+
+        #arcadia-feats {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2rem;
         }
     }
 }
