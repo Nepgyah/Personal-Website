@@ -147,6 +147,24 @@ h3 {
     }
 }
 
+.underline {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 5%;
+        height: 3px;
+        width: 101%;
+    }
+
+    &--red {
+        &::after {
+            background-color: $red;
+        }    
+    }
+}
 html {
     background-color: #ECEAED;
     color: #020003;
@@ -459,7 +477,18 @@ html {
     }
 
     #stack {
+    
+        #bg-stack-triangles-one {
+            height: 100px;
+            left: 10%;
+            top: 0
+        }
 
+        #bg-stack-triangles-two {
+            height: 125px;
+            right: 3%;
+            bottom: 3%;
+        }
         .section__text, #frameworks {
             padding-right: 2rem;
         }

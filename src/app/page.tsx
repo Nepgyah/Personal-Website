@@ -53,10 +53,12 @@ export default function Home() {
         </div>
       </div>
       <div id="stack" className="section">
+        <img id="bg-stack-triangles-one" className="section__bg-element" src="/bg-stack-triangles-one.png" alt="" />
+        <img id="bg-stack-triangles-two" className="section__bg-element" src="/bg-stack-triangles-two.png" alt="" />
         <div className="section__wrapper">
           <div id="stack-first-row">
             <div className="section__text">
-              <h2>My Tech Stack</h2>
+              <h2>My Tech <span className="underline underline--red">Stack</span></h2>
               <p>Check out my tech stack. All the languages, libraries, tools and more that I have worked with in both a professional and hobbyist environment.</p>
             </div>
             <div id="languages">
@@ -105,7 +107,7 @@ export default function Home() {
         <img id="bg-work-triangles-two" className="section__bg-element" src="/bg-work-triangles-two.png" alt="" />
         <div className="section__wrapper">
           <div className="section__text">
-            <h2>My Work Experience</h2>
+            <h2>My <span className="underline underline--red">Work Experience</span></h2>
           </div>
           <div className="work-block">
             <div className="work-block__headline">
@@ -158,7 +160,7 @@ export default function Home() {
       <div id="arcadia" className="section">
         <div className="section__wrapper">
           <div className="section__text">
-            <h2>Permier Personal Project: <br />Arcadia</h2>
+            <h2>Permier Personal <span className="underline underline--red">Project:</span> <br />Arcadia</h2>
             <p>The current project I’m working on. Arcadia aims to combine all sorts of hobbies into one web platform. Track anime, manga and games, build your dream pc, stream music and more. Its your otaku sanctuary.</p>
           </div>
           <div id="arcadia-feats">
@@ -214,7 +216,7 @@ export default function Home() {
         <img id="bg-education-lines-two" className="section__bg-element" src="/bg-education-lines-two.png" alt="" />
         <div className="section__wrapper">
           <div className="section__text">
-            <h2>My Education History</h2>
+            <h2>My <span className="underline underline--red">Education History</span></h2>
           </div>
           <div className="work-block">
             <div className="work-block__headline">
