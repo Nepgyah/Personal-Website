@@ -258,7 +258,49 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="misc"></div>
+      <div id="other-projects" className="section">
+        <div className="section__wrapper">
+          <div className="section__text">
+            <h2>Other Projects</h2>
+            <div className="projects-container">
+              <Card.Root className="box-shadow">
+                <Card.Body gap={2}>
+                  <Card.Title>Pokemon Battle Frontier</Card.Title>
+                  <Card.Description>
+                    Recreating gen 1/2 Pokemon battles with a focus on battle logic.
+                  </Card.Description>
+                  <div className="skills-container">
+                    <StackItem icon="languages/java" title="Java" />
+                  </div>
+                </Card.Body>
+                <Card.Footer gap={2}>
+                  <a href="https://github.com/Nepgyah/Pokemon-Battle-Frontier" target="_blank">
+                    <Button>Github</Button>
+                  </a>
+                </Card.Footer>
+              </Card.Root>
+
+              <Card.Root className="arcadia-feat box-shadow">
+                <Card.Body gap={2}>
+                  <Card.Title>Astral Express Website</Card.Title>
+                  <Card.Description>
+                    A simple website representing the Astral Express from the mobile game Honkai Star Rail.
+                  </Card.Description>
+                  <div className="skills-container">
+                    <StackItem icon="languages/html" title="HTML" />
+                    <StackItem icon="languages/css" title="CSS" />
+                  </div>
+                </Card.Body>
+                <Card.Footer gap={2}>
+                  <a href="https://nepgyah.github.io/astral-express-website" target="_blank">
+                    <Button>Website</Button>
+                  </a>
+                </Card.Footer>
+              </Card.Root>
+            </div>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 }

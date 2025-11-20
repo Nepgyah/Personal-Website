@@ -360,6 +360,26 @@ html {
     }
 }
 
+#other-projects {
+    h2 {
+        text-align: center;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+
+        .chakra-card__root {
+            background-color: #1F2127;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+}
+
 #footer {
     background-color: $bg-dark;
 
@@ -525,6 +545,14 @@ html {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 2rem;
+        }
+    }
+
+    #other-projects {
+        .projects-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
         }
     }
 }
