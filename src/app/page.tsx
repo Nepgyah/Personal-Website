@@ -83,7 +83,7 @@ export default function Home() {
                 <StackItem icon="frameworks/mui" title="Material UI" />
                 <StackItem icon="frameworks/sass" title="sass" />
                 <StackItem icon="frameworks/rest-framework" title="Django Rest Framework" />
-                <StackItem icon="frameworks/redux" title="Redux" />
+                <StackItem icon="frameworks/zustand" title="Zustand" />
                 <StackItem icon="frameworks/react" title="React.js" />
                 <StackItem icon="frameworks/pytest" title="Pytest" />
                 <StackItem icon="frameworks/chakra" title="Chakra UI" />
@@ -160,54 +160,70 @@ export default function Home() {
       <div id="arcadia" className="section">
         <div className="section__wrapper">
           <div className="section__text">
-            <h2>Permier Personal <span className="underline underline--red">Project:</span> <br />Arcadia</h2>
+            <h2>Premier Personal <span className="underline underline--red">Project:</span> <br />Arcadia</h2>
             <p>The current project I’m working on. Arcadia aims to combine all sorts of hobbies into one web platform. Track anime, manga and games, build your dream pc, stream music and more. Its your otaku sanctuary.</p>
           </div>
-          <div id="arcadia-feats">
-            <Card.Root className="arcadia-feat box-shadow">
-              <img src="/arc-platform.jpg" alt="" />
-              <Card.Body gap={2}>
-                <Card.Title>Multi App Web Platform</Card.Title>
-                <Card.Description>
-                  All the Arcadia features in one place. Switch between your favorite hobbies with a click of a button.
-                </Card.Description>
-              </Card.Body>
-              <Card.Footer gap={2}>
-                <a href="https://arcadia-inky.vercel.app" target="_blank">
-                  <Button>Visit the Arcadia Platform</Button>
-                </a>
-              </Card.Footer>
-            </Card.Root>
-
-            <Card.Root className="arcadia-feat box-shadow">
-              <img src="/arc-website.jpg" alt="" />
-              <Card.Body gap={2}>
-                <Card.Title>Public Website</Card.Title>
-                <Card.Description>
-                  Learn about all the apps and what Arcadia means to me.
-                </Card.Description>
-              </Card.Body>
-              <Card.Footer gap={2}>
-                <a href="https://project-arcadia-jade.vercel.app" target="_blank">
-                  <Button>Visit the Arcadia Website</Button>
-                </a>
-              </Card.Footer>
-            </Card.Root>
-
-            <Card.Root className="arcadia-feat box-shadow">
-              <img src="/arc-api.png" alt="" />
-              <Card.Body gap={2}>
-                <Card.Title>Hybrid API</Card.Title>
-                <Card.Description>
-                  A singular backend API for the web plaform using a mix of REST and Graphql
-                </Card.Description>
-              </Card.Body>
-              <Card.Footer gap={2}>
-                <a href="https://github.com/Nepgyah/Arcadia" target="_blank">
-                  <Button>Visit the Arcadia Repo</Button>
-                </a>
-              </Card.Footer>
-            </Card.Root>
+          <div className="arc-section" id="arc-summary">
+            <div className="arc-image">
+              <img className="screenshot box-shadow" src="/arc-website.jpg" alt="" />
+            </div>
+            <div className="arc-text-container">
+              <div className="arc-text">
+                  <h3>Uniting Otaku Activities In a Singular Solution</h3>
+                  <p>Arcadia combines the most popular otaku activities and hosts them in one singular platform. No need to have multiple windows or accounts. Track anime, manga, and games. Discover PC builds and find your next event. Its all in one place.</p>
+              </div>
+            </div>
+          </div>
+          <div className="arc-section" id="arc-frontend">
+            <div className="arc-text-container">
+              <div className="arc-text">
+                  <h3>Building the Arcadia Universe Using Modern Frontend Tech</h3>
+                  <p>Arcadia’s platform and website are being built using Next.js along with typescript. This allows Arcadia to reach its goal of being a rich and deep platform but one that is robust/scalable with a strong foundation using well defined typing.</p>
+              </div>
+            </div>
+            <div className="arc-image">
+              <img className="screenshot box-shadow" src="/arc-platform.jpg" alt="" />
+              <div className="stack-container">
+                <StackItem icon="languages/typescript" title="Typescript" />
+                <StackItem icon="frameworks/nextjs" title="Nextjs" />
+                <StackItem icon="frameworks/zustand" title="Zustand" />
+                <StackItem icon="frameworks/chakra" title="ChakraUI" />
+                <StackItem icon="frameworks/cypress" title="Cypress" />
+                <StackItem icon="frameworks/zod" title="zod" />
+              </div>
+            </div>
+          </div>
+          <div className="arc-section" id="arc-backend">
+            <div className="arc-image">
+              <img className="screenshot box-shadow" src="/arc-api.png" alt="" />
+              <div className="stack-container">
+                <StackItem icon="languages/python" title="Python" />
+                <StackItem icon="frameworks/django" title="Django" />
+                <StackItem icon="frameworks/graphql" title="Graphql" />
+                <StackItem icon="frameworks/rest-framework" title="Django Rest Framework" />
+                <StackItem icon="frameworks/pytest" title="Pytest" />
+              </div>
+            </div>
+            <div className="arc-text-container">
+              <div className="arc-text">
+                  <h3>A Hybrid Backend To Support Future Expansion</h3>
+                  <p>Arcadia utilizes both REST and GraphQl api architecture to maximize and ensure its capable of any edge case that comes up. And the addition of Django and its app structure helps Arcadia place it self in prime position when its reading for microservicing.</p>
+              </div>
+            </div>
+          </div>
+          <div className="arc-section" id="arc-cta">
+            <div id="explore-arcadia" className="arc-text">
+                <h3>Explore the World of Arcadia Today</h3>
+                <p>Check out the potential of the Arcadia platform, or explore the website to learn more the platform and the world building Im creating for it.</p>
+                <div className="button-container">
+                  <a href="https://arcadia-inky.vercel.app" target="blank">
+                    <Button variant={'solid'}>Check out the Platform</Button>
+                  </a>
+                  <a href="https://project-arcadia-jade.vercel.app" target="_blank">
+                    <Button variant={"outline"}>See the Website</Button>
+                  </a>
+                </div>
+            </div>
           </div>
         </div>
       </div>

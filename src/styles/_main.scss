@@ -309,31 +309,71 @@ html {
 
 #arcadia {
     background-color: $bg-dark;
-
+    
     .section__text {
         color: white;
         text-align: center;
     }
+    
+    .arc-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        color: white;
+        text-align: center;
+    }
 
-    #arcadia-feats {
-        margin-top: 3rem;
+    .section__wrapper {
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
     }
 
-    .chakra-card__root {
-        border-radius: 5px;
-        overflow: hidden;
+    .arc-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        .arc-image {
+            order: 1;
+
+            .screenshot {
+                max-width: 75%;
+                margin: auto;
+                border-radius: 5px;
+            }
+            
+            .stack-container {
+                width: 75%;
+                margin: 1rem auto auto;
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .chakra-tag__root {
+                    height: 64px;
+                }
+
+                .chakra-tag__startElement {
+                    height: 48px;
+                    width: 48px;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .arc-text-container {
+            order: 2;
+        }
     }
 
-    .arcadia-feat {
-        background-color: #451E3A;
-
-        img {
-            height: 225px;
-            object-fit: cover;
-        }
+    .button-container {
+        display: flex;
+        column-gap: 2rem;
+        justify-content: center;
     }
 }
 
@@ -540,11 +580,52 @@ html {
 
     #arcadia {
 
-        #arcadia-feats {
-            margin-top: 3rem;
+        .section__wrapper {
+            row-gap: 8rem;
+        }
+
+        .arc-text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .arc-text {
+            text-align: start;
+        }
+
+        .arc-section {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             column-gap: 2rem;
+
+            &#arc-cta {
+                display: block;
+                width: 75%;
+                margin: auto;
+                // text-align: center;
+
+                .arc-text {
+                    text-align: center;
+                }
+            }
+
+            .arc-image {
+
+                .screenshot {
+                    max-width: 100%;
+                }
+                
+                .stack-container {
+                    width: 100%;
+                }
+            }
+        }
+
+        #arc-frontend {
+            .arc-image {
+                order: 2;
+            }
         }
     }
 
