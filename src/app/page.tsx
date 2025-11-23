@@ -207,14 +207,14 @@ export default function Home() {
             <div className="arc-text-container">
               <div className="arc-text">
                   <h3>A Hybrid Backend To Support Future Expansion</h3>
-                  <p>Arcadia utilizes both REST and GraphQl api architecture to maximize and ensure its capable of any edge case that comes up. And the addition of Django and its app structure helps Arcadia place it self in prime position when its reading for microservicing.</p>
+                  <p>Arcadia utilizes both REST and GraphQl API architecture to maximize potential and ensure its capable of any edge case that comes up. And the addition of Django and its app structure helps Arcadia place it self in prime position when its ready for microservicing.</p>
               </div>
             </div>
           </div>
           <div className="arc-section" id="arc-cta">
             <div id="explore-arcadia" className="arc-text">
                 <h3>Explore the World of Arcadia Today</h3>
-                <p>Check out the potential of the Arcadia platform, or explore the website to learn more the platform and the world building Im creating for it.</p>
+                <p>Check out the potential of the Arcadia platform, or explore the website to learn more the platform and the world building I'm creating for it.</p>
                 <div className="button-container">
                   <a href="https://arcadia-inky.vercel.app" target="blank">
                     <Button variant={'solid'}>Check out the Platform</Button>
