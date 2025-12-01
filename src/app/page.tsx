@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <div id="me">
-            <img className="box-shadow" src="/me.jpg" alt="" />
+            <img className="box-shadow" src="/real_me.jpg" alt="" />
           </div>
         </div>
       </div>
