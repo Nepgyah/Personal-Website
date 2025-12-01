@@ -155,6 +155,59 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <div className="mnzt-projects">
+            <div className="mnzt-text">
+              <h3>Manzanita Projects</h3>
+              <p>Here are the projects I've contributed to while at Manzanita</p>
+            </div>
+            <div className="mnzt-projects-container">
+              <Card.Root>
+                <Card.Body gap={2}>
+                  <Card.Title>ax3</Card.Title>
+                  <Card.Description>
+                    <p>Capture, Claim and Control your Category. With ax3, utilize psychological data to create ads that resonate with your audience.</p>
+                    <br />
+                    <p><b>Role</b>: Develop API endpoints in the backend and create responsive pages for the frontend.</p>
+                  </Card.Description>
+                </Card.Body>
+                <Card.Footer>
+                  <a href="https://ax3.io" target="_blank">
+                    <Button>Visit ax3.io</Button>
+                  </a>
+                </Card.Footer>
+              </Card.Root>
+              <Card.Root>
+                <Card.Body gap={2}>
+                  <Card.Title>MNZT.io</Card.Title>
+                  <Card.Description>
+                    <p>The main website for Manzanita, learn about gen3. A new era in marketing.</p>
+                    <br />
+                    <p><b>Role</b>: Lead the creation and implementation of the new design for the company website</p>
+                  </Card.Description>
+                </Card.Body>
+                <Card.Footer>
+                  <a href="https://www.mnzt.io" target="_blank">
+                    <Button>Visit mnzt.io</Button>
+                  </a>
+                </Card.Footer>
+              </Card.Root>
+              <Card.Root>
+                <Card.Body gap={2}>
+                  <Card.Title>Personimals</Card.Title>
+                  <Card.Description>
+                    <p>Utilizing the power of ax3 but in a fun enviornment. Learn all about yourself through fun animals!</p>
+                    <br />
+                    <p><b>Role</b>: Collaborate with intern designer to create new look for personimals website and work with data science team to hookup the calculation through api.</p>
+                    </Card.Description>
+                </Card.Body>
+                <Card.Footer>
+                  <a href="https://personimals.me" target="_blank">
+                    <Button>Visit personimals.me</Button>
+                  </a>
+                </Card.Footer>
+              </Card.Root>
+            </div>
+          </div>
         </div>
       </div>
       <div id="arcadia" className="section">

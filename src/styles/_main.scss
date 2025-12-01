@@ -305,6 +305,22 @@ html {
         flex-direction: column;
         row-gap: 3rem;
     }
+
+    .mnzt-projects {
+        margin-top: 3rem;
+
+        .mnzt-text {
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .mnzt-projects-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+    }
 }
 
 #arcadia {
@@ -578,6 +594,21 @@ html {
         }
     }
 
+    #experience {
+        .mnzt-projects {
+
+            .mnzt-projects-container {
+                display: flex;
+                flex-direction: row;
+                column-gap: 1rem;
+                justify-content: center;
+                
+                > div {
+                    width: 300px;
+                }
+            }
+        }
+    }
     #arcadia {
 
         .section__wrapper {
